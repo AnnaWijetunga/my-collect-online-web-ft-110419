@@ -1,8 +1,9 @@
 def my_collect(empty_array)
-  empty_array = []
-  counter = 0
-  
-  my_collect(empty_array) do |x|
-  counter +=1 
+  i = 0 
+  new_collection = []
+  while i < collection.length 
+    new_collection << yield(collection[i])
+    i += 1 
+  end
 end
 
